@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        rye: ['Rye', 'cursive'],
+        'libre-bodoni': ['Libre Bodoni', 'serif']
+    },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
